@@ -7,4 +7,4 @@ This project is a result of the joint efforts of the collaborators as mentioned 
 Aditya Kulkarni (Scrum Master) \
 Mohammed El Kadri \
 Ahsan Saeed \
-Su Shen Ricky \
+Su Shen Ricky
