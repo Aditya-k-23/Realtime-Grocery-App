@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/Login_page"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/App_grey"
+    tools:context=".LoginActivity">
+
+    <ImageView
+        android:id="@+id/GroceryIcon"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Login_Heading"
+        app:srcCompat="@drawable/ic_login" />
+
+    <EditText
+        android:id="@+id/Login_Username_EditText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:fontFamily="@font/open_sans"
+        android:hint="@string/Username"
+        android:inputType="textPersonName"
+        android:minHeight="48dp"
+        android:singleLine="true"
+        android:typeface="sans"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/GroceryIcon" />
+
+    <EditText
+        android:id="@+id/Login_Password_EditText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:fontFamily="@font/open_sans"
+        android:hint="@string/Password"
+        android:inputType="textPassword"
+        android:minHeight="48dp"
+        android:singleLine="true"
+        android:typeface="sans"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Login_Username_EditText" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/Login_loginAsCust_Button"
+        android:layout_width="215dp"
+        android:layout_height="50dp"
+        android:autoSizeTextType="uniform"
+        android:backgroundTint="@color/App_green"
+        android:fontFamily="@font/open_sans_bold"
+        android:onClick="Login_LoginAsCustomer_Button"
+        android:text="@string/login_as_customer_button"
+        android:typeface="sans"
+        app:cornerRadius="50dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Login_Password_EditText" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/Login_LoginAsOwner_Button"
+        android:layout_width="215dp"
+        android:layout_height="50dp"
+        android:autoSizeTextType="uniform"
+        android:backgroundTint="@color/App_green"
+        android:fontFamily="@font/open_sans_bold"
+        android:onClick="Login_LoginAsOwner_Button"
+        android:text="@string/login_as_owner_button"
+        android:typeface="sans"
+        app:cornerRadius="50dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Login_loginAsCust_Button"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/Login_Signup_Button"
+        android:layout_width="215dp"
+        android:layout_height="50dp"
+        android:autoSizeTextType="uniform"
+        android:backgroundTint="@color/App_green"
+        android:fontFamily="@font/open_sans_bold"
+        android:onClick="SignUpButton"
+        android:text="@string/signup"
+        android:typeface="sans"
+        app:cornerRadius="50dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Login_LoginAsOwner_Button"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/Login_Heading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/open_sans_bold"
+        android:text="@string/Login"
+        android:textColor="#38761D"
+        android:textSize="48sp"
+        android:textStyle="bold"
+        android:typeface="sans"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
